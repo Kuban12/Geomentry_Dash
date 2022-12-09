@@ -1,0 +1,246 @@
+.CharacktersPageMainContainer{
+    /* position: absolute; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: CharacktersPageColor 30s infinite;
+}
+
+@keyframes CharacktersPageColor {
+    0% { background-color: #0000ff;}
+    5% { background-color: #4000ff;}
+    10% { background-color: #6f00ff;}
+    15% { background-color: #9d00ff;}
+    20% { background-color: #d900ff;}
+    25% { background-color: #ff00e1;}
+    30% { background-color: #ff008c;}
+    35% { background-color: #ff0051;}
+    40% { background-color: #ff0000;}
+    45% { background-color: #ff3300;}
+    50% { background-color: #ff5500;}
+    55% { background-color: #ff9900;}
+    60% { background-color: #ffee00;}
+    65% { background-color: #c8ff00;}
+    70% { background-color: #62ff00;}
+    75% { background-color: #00ff51;}
+    80% { background-color: #00ffa2;}
+    85% { background-color: #00eaff;}
+    90% { background-color: #0099ff;}
+    95% { background-color: #0033ff;}
+    100% { background-color: #000dff;}
+}
+
+.ChPageMainCharackter{
+    height: 170px;
+    margin-top: 5%;
+}
+.ChPageHr {
+    width: 80%;
+    border: 0;
+    margin: 0;
+    height: 1.5px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    opacity: 1;
+}
+
+.ChPageCharackterTypeContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 17%;
+    height: 100px;
+    margin-top: 3%;
+    cursor: pointer;
+}
+.ChPageSmileCharackter, .ChPagePlaneCharackter{
+    height: 80px;
+}
+
+.ChPageSmileCharackter:active, .ChPagePlaneCharackter:active{
+    transform: scale(1.1);
+}
+.chooseCharackterType{
+    width: 15%;
+    height: 5px;
+}
+
+
+.ChPageAllChrackters{
+    width: 83%;
+    height: 30%;
+    border-radius: 1.5em;
+    margin-top: 3%;
+    background-color: rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+
+.prevCharackters{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 40px;
+    height: 40px;
+    border-top: 40px solid transparent;
+    border-right: 60px solid white;
+    border-bottom: 40px solid transparent;
+    cursor: pointer;
+}
+.nextCharackters{
+    position: absolute;
+    top: 45%;
+    right: 5%;
+    width: 40px;
+    height: 40px;
+    border-top: 40px solid transparent;
+    border-left: 60px solid white;
+    border-bottom: 40px solid transparent;
+    cursor: pointer;
+    
+}
+.prevCharackters:active, .nextCharackters:active{
+    transform: scale(1.1);
+}
+
+.ChPageSlileCharackters{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+.ChPagePlaneCharackters{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.ChPageCharackter{
+    height: 120px;
+}
+.ChPageCharackter:active{
+    transform: scale(1.05);
+}
+
+.ChPagePlane1{
+    width: 170px;
+    height: 100px;
+}
+.ChPagePlane1:active{
+    transform: scale(1.05);
+}
+
+
+
+/* Corner Elems */
+
+.charackterPageTopSideDecorCont1{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.charackterPageTopSideDecorCont2{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.charackterPagebottomSideDecorCont1{
+    position: absolute;
+    bottom:0;
+    left: 0;
+}
+.charackterPagebottomSideDecorCont2{
+    position: absolute;
+    bottom:0;
+    right: 0;
+}
+
+
+.charackterPageTopSideDecorSubCont1{
+    display: flex;
+    align-items: start;
+}
+.charackterPagebottomSideDecorSubCont1{
+    display: flex;
+    align-items: end;
+}
+
+.charackterPageTopSideDecorCont2, .charackterPagebottomSideDecorCont2{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.charackterPageTopSideDecorSubCont2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: start;
+}
+.charackterPagebottomSideDecorSubCont2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+}
+
+
+
+.charackterPageTopSideDecorElem1, .charackterPagebottomSideDecorElem3{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 255, 191);
+    border: #000 3px solid;
+}
+.charackterPageTopSideDecorElem2, .charackterPagebottomSideDecorElem2{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(60, 255, 0);
+    border: #000 3px solid;
+}
+.charackterPageTopSideDecorElem3, .charackterPagebottomSideDecorElem1{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(0, 255, 191);
+    border: #000 3px solid;
+}
+
+
+
+/* Go Back Button */
+
+/* Triangle */
+.ChPageTriangleCont{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ChPageTriangle{
+    position: absolute;
+    border-top: 40px solid transparent;
+    border-right: 60px solid #ff03c4;
+    border-bottom: 40px solid transparent;
+    z-index: 2;
+}
+.ChPageTriangle2{
+    border-top: 45px solid transparent;
+    border-right: 65px solid #000000;
+    border-bottom: 45px solid transparent;
+    z-index: 1;
+}
+.ChPageTriangleCont:active {
+    transform:scale(1.1);
+}
